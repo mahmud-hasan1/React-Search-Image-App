@@ -1,0 +1,26 @@
+
+.gridView {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap:5px 5px; 
+}
+
+.image-list{
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.image-list img{
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 16px #333;
+    transition: all 1.5s ease;
+}
+
+.image-list:hover {
+  transform: scale(1.025);
+}
+.image-list img:hover {
+  box-shadow: 0 0 32px #333;
+}
